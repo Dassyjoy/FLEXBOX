@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 30px;
+  }
+  [class ^="box-"] {
+    display: grid;
+    place-items: center;
+    padding: 30px;
+    box-shadow:  0 5px rgb(0, 0, .1,);
+    color: #fff;
+  }
+  body{
+    background: black;
+    height: 100vh;
+  }
+  button{
+    color: black;
+    background:hsl(184, 100%, 22%);
+  padding: 2px 8px;
+    top: 0;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+  }
+  button:hover{
+    background-color: hsl(184, 100%,  22%);
+    color: black;
+  }
+  .grid-container{
+    height: 90vh;
+    width: 90%;
+    margin: 20px  auto;
+    display: grid;
+    gap: 10px;
+  
+    grid-template-columns: repeat(12,1fr);
+    grid-template-areas:
+    "h h h h   h h h h  a a a a"
+    "h h h h   h h h h  a a a a"
+    "h h h h   h h h h  a a a a"
+    "m m m m   m m b b  b b b b"
+    "m m m m   m m b b  b b b b"
+    "m m m m   m m s s  s s s s"
+    "m m m m   m m s s  s s s s";
+    }
+  .grid-container .box-1 {
+    grid-area: h;
+    background-color: red;
+  }
+  .grid-container .box-2{
+    grid-area: a;
+    background-color: orangered;
+  }
+  .grid-container .box-3{
+    grid-area: m;
+    background-color: #008000;
+  }
+  .grid-container .box-4{
+    grid-area: b;
+    background-color: blue;
+  }
+  .grid-container .box-5{
+    grid-area: s;
+    background-color: blue;
+  }
+  @media(min-width:768px) {
+    .grid-container{
+      height: 90vh;
+      width: 90%;
+      margin: 20px auto;
+      display: grid;
+      gap: 10px;
+  
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-areas: 
+    "h h h h   h h h h  a a a a"
+    "h h h h   h h h h  a a a a"
+    "h h h h   h h h h  a a a a"
+    "m m m m   m m b b  b b b b"
+    "m m m m   m m b b  b b b b"
+    "m m m m   m m s s  s s s s"
+    "m m m m   m m s s  s s s s";
+    }
+  .grid-container .box-1{
+    grid-area: h;
+  }
+    .grid-container .box-2{
+      grid-area: a;
+    }
+    .grid-container .box-3{
+      grid-area: m;
+    }
+    .grid-container .box-4{
+      grid-area: b;
+    }
+    .grid-container  .box-5{
+      grid-area: s;
+    }
+  }
+  @media(min-width:1080px) {
+    .grid-container{
+      height:90vh;
+      width:90%;
+      margin:20px auto;
+      display:grid;
+      gap:10px;
+       grid-template-columns: repeat(12, 1fr);
+      grid-template-areas: 
+    "h h h h   h h h h  a a a a"
+    "h h h h   h h h h  a a a a"
+    "h h h h   h h h h  a a a a"
+    "m m m m   m m b b  b b b b"
+    "m m m m   m m b b  b b b b"
+    "m m m m   m m s s  s s s s"
+    "m m m m   m m s s  s s s s";
+    }
+  .grid-container .box-1{
+    grid-area: h;
+  }
+    .grid-container .box-2{
+      grid-area: a;
+    }
+    .grid-container .box-3{
+      grid-area: m;
+    }
+    .grid-container .box-4{
+      grid-area: b;
+    }
+    .grid-container  .box-5{
+      grid-area: s;   grid-template-columns: repeat(12, 1fr);
+      grid-template-areas: 
+    "h h h h   h h h h  a a a a"
+    "h h h h   h h h h  a a a a"
+    "h h h h   h h h h  a a a a"
+    "m m m m   m m b b  b b b b"
+    "m m m m   m m b b  b b b b"
+    "m m m m   m m s s  s s s s"
+    "m m m m   m m s s  s s s s";
+    }
+  .grid-container .box-1{
+    grid-area: h;
+  }
+    .grid-container .box-2{
+      grid-area: a;
+    }
+    .grid-container .box-3{
+      grid-area: m;
+    }
+    .grid-container .box-4{
+      grid-area: b;
+    }
+    .grid-container  .box-5{
+      grid-area: s;
+    }
+  }
